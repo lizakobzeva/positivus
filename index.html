@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positivus</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo">
+          <img
+            src="/images/logo.svg"
+            alt="Positivus"
+            class="logo__img"
+            width="220"
+            height="36"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Space Grotesk</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Use Cases</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="header__button button button--transparent hidden-mobile"
+        >
+          Request a quote
+        </button>
+        <button
+          onclick="mobileOverlay.showModal()"
+          type="button"
+          class="button__burger-menu burger-button visible-mobile"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="hero">
+            <div class="hero__main">
+              <div class="hero__body">
+                <h1 class="hero__title">
+                  Navigating the digital landscape for success
+                </h1>
+                <div class="hero__description">
+                  <p>
+                    Our digital marketing agency helps businesses grow and
+                    succeed online through a range of services including SEO,
+                    PPC, social media marketing, and content creation.
+                  </p>
+                </div>
+                <button type="button" class="button hero__button">
+                  Book a consultation
+                </button>
+              </div>
+              <img
+                class="hero__image"
+                src="./images/HeroImg.svg"
+                alt=""
+                loading="lazy"
+                width="600"
+                height="515"
+              />
+            </div>
+
+            <div class="hero__partners">
+              <ul class="hero__partners-list">
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo1.svg"
+                    alt="Amazon"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo2.svg"
+                    alt="dribble"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo3.svg"
+                    alt="HubSpot"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo4.svg"
+                    alt="Notion"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo5.svg"
+                    alt="NETFLIX"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/Companylogo6.svg"
+                    alt="ZOOM"
+                    class="hero__partners-image"
+                    width="130"
+                    height="48"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title puddle-bg puddle-bg--accent">Services</h2>
+          <div class="section__description">
+            <p>
+              At our digital marketing agency, we offer a range of services to
+              help businesses grow and succeed online. These services include:
+            </p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="services">
+            <ul class="services__list grid grid--2">
+              <li class="services__item">
+                <article class="service-card service-card--light-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--accent"
+                        >Search engine</span
+                      >
+                      <span class="puddle-bg puddle-bg--accent"
+                        >optimization</span
+                      >
+                    </h3>
+                    <a class="service-card__link" href="">
+                      <span class="service-card__link-icon">
+                        <svg
+                          width="20.326172"
+                          height="17.701172"
+                          viewBox="0 0 20.3262 17.7012"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <desc>Created with Pixso.</desc>
+                          <defs />
+                          <path
+                            id="Arrow 1"
+                            d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                            fill="#191A23"
+                            fill-opacity="1.000000"
+                            fill-rule="nonzero"
+                          />
+                          <path
+                            id="Arrow 1"
+                            d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                            fill="#B9FF66"
+                            fill-opacity="1.000000"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service1.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+
+              <li class="services__item">
+                <article class="service-card service-card--accent-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--light"
+                        >Pay-per-click</span
+                      >
+                      <span class="puddle-bg puddle-bg--light"
+                        >advertising</span
+                      >
+                    </h3>
+                    <a class="service-card__link" href="">
+                      <span class="service-card__link-icon">
+                        <span class="service-card__link-icon">
+                          <svg
+                            width="20.326172"
+                            height="17.701172"
+                            viewBox="0 0 20.3262 17.7012"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Arrow 1"
+                              d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                              fill="#191A23"
+                              fill-opacity="1.000000"
+                              fill-rule="nonzero"
+                            />
+                            <path
+                              id="Arrow 1"
+                              d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                              fill="#B9FF66"
+                              fill-opacity="1.000000"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service2.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+
+              <li class="services__item">
+                <article class="service-card service-card--dark-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--light"
+                        >Social Media</span
+                      >
+                      <span class="puddle-bg puddle-bg--light">Marketing</span>
+                    </h3>
+                    <a
+                      class="service-card__link service-card__link--light"
+                      href=""
+                    >
+                      <span class="service-card__link-icon">
+                        <span class="service-card__link-icon">
+                          <svg
+                            width="20.326172"
+                            height="17.701172"
+                            viewBox="0 0 20.3262 17.7012"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Arrow 1"
+                              d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                              fill="#191A23"
+                              fill-opacity="1.000000"
+                              fill-rule="nonzero"
+                            />
+                            <path
+                              id="Arrow 1"
+                              d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                              fill="#B9FF66"
+                              fill-opacity="1.000000"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service3.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+
+              <li class="services__item">
+                <article class="service-card service-card--light-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--accent">Email</span>
+                      <span class="puddle-bg puddle-bg--accent">Marketing</span>
+                    </h3>
+                    <a class="service-card__link" href="">
+                      <span class="service-card__link-icon">
+                        <span class="service-card__link-icon">
+                          <svg
+                            width="20.326172"
+                            height="17.701172"
+                            viewBox="0 0 20.3262 17.7012"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Arrow 1"
+                              d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                              fill="#191A23"
+                              fill-opacity="1.000000"
+                              fill-rule="nonzero"
+                            />
+                            <path
+                              id="Arrow 1"
+                              d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                              fill="#B9FF66"
+                              fill-opacity="1.000000"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service4.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+
+              <li class="services__item">
+                <article class="service-card service-card--accent-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--light">Content</span>
+                      <span class="puddle-bg puddle-bg--light">Creation</span>
+                    </h3>
+                    <a class="service-card__link" href="">
+                      <span class="service-card__link-icon">
+                        <span class="service-card__link-icon">
+                          <svg
+                            width="20.326172"
+                            height="17.701172"
+                            viewBox="0 0 20.3262 17.7012"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Arrow 1"
+                              d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                              fill="#191A23"
+                              fill-opacity="1.000000"
+                              fill-rule="nonzero"
+                            />
+                            <path
+                              id="Arrow 1"
+                              d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                              fill="#B9FF66"
+                              fill-opacity="1.000000"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service5.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+
+              <li class="services__item">
+                <article class="service-card service-card--dark-bg">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg puddle-bg--accent"
+                        >Analytics and</span
+                      >
+                      <span class="puddle-bg puddle-bg--accent">Tracking</span>
+                    </h3>
+                    <a
+                      class="service-card__link service-card__link--light"
+                      href=""
+                    >
+                      <span class="service-card__link-icon">
+                        <span class="service-card__link-icon">
+                          <svg
+                            width="20.326172"
+                            height="17.701172"
+                            viewBox="0 0 20.3262 17.7012"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Arrow 1"
+                              d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                              fill="#191A23"
+                              fill-opacity="1.000000"
+                              fill-rule="nonzero"
+                            />
+                            <path
+                              id="Arrow 1"
+                              d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                              fill="#B9FF66"
+                              fill-opacity="1.000000"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="service-card__link-title">Learn more</span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="/images/service6.svg"
+                    alt=""
+                  />
+                </article>
+              </li>
+            </ul>
+            <div class="services__banner banner">
+              <div class="banner__inner">
+                <div class="banner__body">
+                  <h3 class="banner__title">Let’s make things happen</h3>
+                  <div class="banner__description">
+                    <p>
+                      Contact us today to learn more about how our digital
+                      marketing services can help your business grow and succeed
+                      online.
+                    </p>
+                  </div>
+                  <button class="banner__button button">
+                    Get your free proposal
+                  </button>
+                </div>
+                <img
+                  src="./images/banner.svg"
+                  alt=""
+                  class="banner__image"
+                  width="359"
+                  height="394"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title puddle-bg puddle-bg--accent">
+            Case Studies
+          </h2>
+          <div class="section__description">
+            <p>
+              Explore Real-Life Examples of Our Proven Digital Marketing Success
+              through Our Case Studies
+            </p>
+          </div>
+        </header>
+
+        <div class="section__body">
+          <div class="studies">
+            <ul class="studies__list">
+              <li class="studies__item">
+                <div class="studies__discription">
+                  <p>
+                    For a local restaurant, we implemented a targeted PPC
+                    campaign that resulted in a 50% increase in website traffic
+                    and a 25% increase in sales.
+                  </p>
+                </div>
+                <a href="" class="studies__link">
+                  <span>Learn more</span>
+                  <span>
+                    <svg
+                      width="20.326172"
+                      height="17.701172"
+                      viewBox="0 0 20.3262 17.7012"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs />
+                      <path
+                        id="Arrow 1"
+                        d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Arrow 1"
+                        d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+
+              <li class="studies__item">
+                <div class="studies__discription">
+                  <p>
+                    For a B2B software company, we developed an SEO strategy
+                    that resulted in a first page ranking for key keywords and a
+                    200% increase in organic traffic.
+                  </p>
+                </div>
+                <a href="" class="studies__link">
+                  <span>Learn more</span>
+                  <span>
+                    <svg
+                      width="20.326172"
+                      height="17.701172"
+                      viewBox="0 0 20.3262 17.7012"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs />
+                      <path
+                        id="Arrow 1"
+                        d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Arrow 1"
+                        d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+
+              <li class="studies__item">
+                <div class="studies__discription">
+                  <p>
+                    For a national retail chain, we created a social media
+                    marketing campaign that increased followers by 25% and
+                    generated a 20% increase in online sales.
+                  </p>
+                </div>
+                <a href="" class="studies__link">
+                  <span>Learn more</span>
+                  <span>
+                    <svg
+                      width="20.326172"
+                      height="17.701172"
+                      viewBox="0 0 20.3262 17.7012"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs />
+                      <path
+                        id="Arrow 1"
+                        d="M2.26172 15.8794L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L0.78125 13.3164L2.26172 15.8794ZM16.9863 5.66846L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.9863 5.66846Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Arrow 1"
+                        d="M14.9375 5.11963L6.8457 2.95117C6.0332 2.7334 5.56641 1.92529 5.78516 1.11377C6.00195 0.302246 6.81055 -0.164062 7.62109 0.0532227L19.2129 3.15918C20.0234 3.37646 20.4902 4.18457 20.2734 4.99609L17.168 16.5874C16.9492 17.3984 16.1426 17.8652 15.3301 17.6479C14.5195 17.4307 14.0527 16.6221 14.2695 15.811L16.4375 7.71777L2.25391 15.9067C1.52734 16.3271 0.625 16.0854 0.205078 15.3579C-0.214844 14.6304 0.0273438 13.729 0.753906 13.3091L14.9375 5.11963Z"
+                        fill="#B9FF66"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form method="dialog" class="mobile-overlay__close-button-wrapper">
+        <button type="submit" class="mobile-overlay__close-button cross-button">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobyle-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobie-overlay__item">
+            <a href="/" class="mobile-overlay__link">About us</a>
+          </li>
+          <li class="mobie-overlay__item">
+            <a href="/" class="mobile-overlay__link">Space Grotesk</a>
+          </li>
+          <li class="mobie-overlay__item">
+            <a href="/" class="mobile-overlay__link">Use Cases</a>
+          </li>
+          <li class="mobie-overlay__item">
+            <a href="/" class="mobile-overlay__link">Pricing</a>
+          </li>
+          <li class="mobie-overlay__item">
+            <a href="/" class="mobile-overlay__link">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>
